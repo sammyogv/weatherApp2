@@ -30,7 +30,7 @@ function LeftMiddle() {
             </div>
         </div>
         </>
-    );
+    )
 }
 
 export default LeftMiddle;
