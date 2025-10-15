@@ -7,7 +7,7 @@ import Top from './top.tsx'
 function Header(){
 
     return(
-        <div className='w-screen flex flex-col items-center'>
+        <div className='w-full flex flex-col items-center'>
             <Top/>
             <Greetings/>
             <Search/>
