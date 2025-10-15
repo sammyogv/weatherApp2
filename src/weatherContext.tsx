@@ -152,11 +152,11 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
         })
       );
 
-      const info:InfoDetailsType [] = weatherData.daily.time.map(
-        (date: string, index: number) => ({
-            humidity: weatherData.daily.precipitation_probability_mean[index],
-            windSpeed: weatherData.daily.wind_gusts_10m_max[index],
-            precipitation: weatherData.daily.precipitation_sum[index],
+      const info: InfoDetailsType[] = weatherData.daily.time.map(
+        (_date: string, index: number) => ({
+          humidity: weatherData.daily.precipitation_probability_mean[index],
+          windSpeed: weatherData.daily.wind_gusts_10m_max[index],
+          precipitation: weatherData.daily.precipitation_sum[index],
         })
       );
 
